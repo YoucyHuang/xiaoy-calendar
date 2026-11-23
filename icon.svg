@@ -1,19 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <rect width="512" height="512" fill="#e8615a"/>
-  <g transform="rotate(-5 256 270)" stroke="#1f1d1b" stroke-linecap="round" stroke-linejoin="round">
-    <!-- 纸张阴影 -->
-    <path d="M118 150 Q117 138 130 137 L392 134 Q406 134 406 148 L410 418 Q410 432 396 432 L134 434 Q120 434 120 420 Z" fill="#1f1d1b" stroke="none" transform="translate(14 14)" opacity=".22"/>
-    <!-- 日历纸 -->
-    <path d="M118 150 Q117 138 130 137 L392 134 Q406 134 406 148 L410 418 Q410 432 396 432 L134 434 Q120 434 120 420 Z" fill="#fbfaf6" stroke-width="12"/>
-    <!-- 表头线 -->
-    <path d="M122 206 Q260 200 406 204" fill="none" stroke-width="10"/>
-    <!-- 有待办的格子：半透明主题色 -->
-    <rect x="322" y="330" width="62" height="62" rx="10" fill="#e8615a" fill-opacity=".45" stroke="none"/>
-    <!-- 手写 Y -->
-    <path d="M196 248 Q228 290 258 318 Q284 286 318 244" fill="none" stroke-width="24"/>
-    <path d="M258 318 Q256 352 259 392" fill="none" stroke-width="24"/>
-    <!-- 装订环 -->
-    <path d="M190 112 L192 168" fill="none" stroke-width="20"/>
-    <path d="M330 110 L332 166" fill="none" stroke-width="20"/>
+  <g stroke="#1f1d1b" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- 小Y：躲在日历后面，从右边探出脑袋 -->
+    <g>
+      <!-- 头顶的 Y 形小芽 -->
+      <path d="M408 196 Q406 176 410 160" fill="none" stroke-width="10"/>
+      <path d="M410 162 Q398 146 384 140" fill="none" stroke-width="10"/>
+      <path d="M410 162 Q420 144 434 136" fill="none" stroke-width="10"/>
+      <!-- 脑袋 -->
+      <path d="M352 250 Q350 196 404 192 Q460 190 466 244 Q470 296 412 302 Q356 304 352 250 Z" fill="#fff7e8" stroke-width="10"/>
+    </g>
+
+    <g transform="rotate(-5 236 280)">
+      <!-- 纸张阴影 -->
+      <path d="M90 160 Q89 148 102 147 L364 144 Q378 144 378 158 L382 428 Q382 442 368 442 L106 444 Q92 444 92 430 Z" fill="#1f1d1b" stroke="none" transform="translate(14 14)" opacity=".22"/>
+      <!-- 日历纸 -->
+      <path d="M90 160 Q89 148 102 147 L364 144 Q378 144 378 158 L382 428 Q382 442 368 442 L106 444 Q92 444 92 430 Z" fill="#fbfaf6" stroke-width="12"/>
+      <!-- 表头 -->
+      <path d="M94 216 Q232 210 378 214" fill="none" stroke-width="10"/>
+      <!-- 手写日期 23 -->
+      <path d="M140 284 Q148 252 180 254 Q212 258 204 292 Q196 322 140 392 Q180 388 218 390" fill="none" stroke-width="22"/>
+      <path d="M244 270 Q268 248 296 262 Q314 282 282 314 Q322 318 316 356 Q306 396 244 382" fill="none" stroke-width="22"/>
+      <!-- 装订环 -->
+      <path d="M162 122 L164 178" fill="none" stroke-width="20"/>
+      <path d="M302 120 L304 176" fill="none" stroke-width="20"/>
+    </g>
+
+    <!-- 小Y 的脸（露在纸边外） -->
+    <circle cx="398" cy="244" r="7" fill="#1f1d1b" stroke="none"/>
+    <circle cx="430" cy="242" r="7" fill="#1f1d1b" stroke="none"/>
+    <ellipse cx="386" cy="266" rx="8" ry="5" fill="#ec7fb0" fill-opacity=".7" stroke="none"/>
+    <ellipse cx="444" cy="266" rx="10" ry="6" fill="#ec7fb0" fill-opacity=".7" stroke="none"/>
+    <path d="M404 266 Q412 274 420 266" fill="none" stroke-width="6"/>
+    <!-- 扒着纸边的小手 -->
+    <path d="M362 300 Q362 284 378 284 Q394 286 392 302 Q390 316 376 316 Q362 314 362 300 Z" fill="#fff7e8" stroke-width="8"/>
   </g>
 </svg>
